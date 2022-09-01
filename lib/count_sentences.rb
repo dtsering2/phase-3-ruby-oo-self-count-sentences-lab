@@ -1,20 +1,17 @@
-require 'pry'
-
 class String
+  attr_writer :sentence , :question, :exclamation, :count_sentence
+
+  def initialize (str)
+    @str = str
+  end
 
   def sentence?
-    
+    if @str.include? "."
+      true
+    end
   end
 
-  def question?
 
-  end
 
-  def exclamation?
 
-  end
-
-  def count_sentences
-
-  end
 end
